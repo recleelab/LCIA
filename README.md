@@ -2,10 +2,14 @@
 **L**ive **C**ell **I**maging **A**nalysis 
 
 ## Summary 
-A set of tools developed for analysis of live cell imaging data where: 
-1. Manually define regions for the nucleus and cytoplasm acrossed an entire movie and for a set of cells. The process has been optimized to reduce the number of keystrokes and mouse clicks for speed. 
-2. Utilize CellPose to segment a set of expierments and store the masks. 
-3. Tools to extract the data from the masks and automatically plot the results. 
+The Live Cell Imaging Analysis (LCIA) package is a Python-based toolkit designed to streamline quantitative analysis of live-cell fluorescence microscopy experiments. Originally developed to support research on NF-κB signaling dynamics and virus reproduction, LCIA enables efficient extraction, segmentation, and correction of single-cell trajectories across large, complex imaging datasets.
+
+Live-cell imaging experiments can generate thousands of regions of interest (ROIs) within a single time-lapse dataset, making manual curation prohibitively slow and error-prone. LCIA addresses this bottleneck by combining automated pipelines with user-guided interaction, ensuring both speed and accuracy:
+
+- **Manual extraction module** – Provides an intuitive OpenCV-based interface for annotating nuclear and cytoplasmic ROIs, with streamlined navigation across frames and experiments. Users can rapidly define ROIs, track moving cells, and save results in standardized formats.
+- **Automated segmentation** – Integrates deep learning tools such as Cellpose for nuclear segmentation and bTrack for probabilistic trajectory linking, enabling scalable processing of hundreds of frames.
+- **Trajectory correction** – Offers a Napari-based visualization interface for manual review and refinement of automated results, including correction of identity switches, fragmentation, and annotation of cell fate events (e.g., division or death).
+
 
 ## Setup 
 1. Download and install the Individual Edition of Anaconda 
@@ -38,3 +42,8 @@ Below is an example of a single row for an experiment
 |Date|Experiment Code|File|Well|Title|Description|SavePrefix|NumberOfPoints|Channels|dt|Time Unit|TimeOfTreatment|
 |---|---|---|---|---|---|---|---|---|---|---|---|
 |12/11/20|1001000|NameOfFile.dv|A1_P01|Control|No Changes To Media|Control_A01| 1|CFP//YFP//mCherry//Pol|2|minute|14|
+
+# Limitations and Future Work 
+Initial public release of the Live Cell Imaging Analysis (LCIA) package. 
+This version includes the mature manual ROI extraction and automatic 
+nuclear detection modules. Other components remain under active development.
