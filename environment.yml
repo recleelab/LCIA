@@ -1,0 +1,18 @@
+name: LCIA
+channels:
+  - anaconda
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python==3.8
+  - matplotlib==3.3
+  - pandas==1.1
+  - jupyter
+  - pip 
+  - pip:
+    - cellpose==0.5
+    - mrc==0.1.5
+    - mxnet==1.7.0.post1
+    - scikit-learn==0.23.2
+    - opencv-python

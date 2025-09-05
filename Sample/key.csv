@@ -1,0 +1,2 @@
+﻿Date,Expierment Code,File,Well,Title,Description,SavePrefix,NumberOfPoints,Channels,dt,Time Unit,TimeOfTreatment
+7/1/21,1,Test.dv,A,Sample 1,Shorten Image Sequence,Spot_01,1,CFP//YFP//mCherry//Pol,2,minute,2
