@@ -43,7 +43,7 @@ Below is an example of a single row for an experiment
 |---|---|---|---|---|---|---|---|---|---|---|---|
 |12/11/20|1001000|NameOfFile.dv|A1_P01|Control|No Changes To Media|Control_A01| 1|CFP//YFP//mCherry//Pol|2|minute|14|
 
-# Limitations and Future Work 
+# Future Work 
 Initial public release of the Live Cell Imaging Analysis (LCIA) package. 
 This version includes the mature manual ROI extraction and automatic 
 nuclear detection modules. Other components remain under active development.
